@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Climate Action Pledge</title>
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Hero Section: Welcome message and Call to Action -->
+  <div class="hero">
+    <h1>You Can Make a Real Difference 🌍</h1>
+    <p>
+      Every promise you make helps build a wave of hope. Join changemakers today by taking your climate action pledge!
+    </p>
+    <button onclick="document.getElementById('pledgeForm').scrollIntoView({behavior:'smooth'})">
+      I'm Ready to Pledge!
+    </button>
+  </div>
+
+  <!-- Live Stats Section showing pledge targets and counts -->
+  <div class="kpi" id="kpiSection">
+    <div><span class="highlight">🌟 Target:</span><br /><strong>1,000,000 Pledges</strong></div>
+    <div><span class="highlight">🙌 Achieved:</span><br /><span id="kpiTotal">0</span></div>
+    <div><span class="highlight">🎓 Students:</span><br /><span id="kpiStudents">0</span></div>
+    <div><span class="highlight">💼 Professionals:</span><br /><span id="kpiProfessionals">0</span></div>
+    <div><span class="highlight">🏫 Workshops:</span><br /><span id="kpiWorkshops">0</span></div>
+  </div>
+
+  <!-- Motivation Section -->
+  <div>
+    <h2>Why Your Pledge Matters</h2>
+    <p>
+      One person can inspire many! Every small action adds up to create big impact for a greener tomorrow.
+    </p>
+  </div>
+
+  <!-- Pledge Form where users submit their commitment -->
+  <form id="pledgeForm" autocomplete="off">
+    <h2>Your Climate Promise</h2>
+    <p class="thanks">Thank you for stepping up! Please tell us a bit about yourself:</p>
+    <input required type="text" name="name" placeholder="Your name" /><br />
+    <input required type="email" name="email" placeholder="Your email (for the certificate)" /><br />
+    <input required type="tel" name="mobile" placeholder="Your mobile number" /><br />
+    <input required type="text" name="state" placeholder="Your state or region" /><br />
+    <select required name="profile">
+      <option value="" disabled selected>Select your profile</option>
+      <option value="Student">Student</option>
+      <option value="Working Professional">Working Professional</option>
+      <option value="Workshop">Workshop</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <!-- Commitment checkboxes -->
+    <div class="commitments">
+      <h4>Which eco-friendly actions will you take?</h4>
+      <label><input type="checkbox" name="commitments" value="Reduce plastic use" /> Reduce plastic waste</label>
+      <label><input type="checkbox" name="commitments" value="Cycle to work" /> Cycle or walk instead of driving</label>
+      <label><input type="checkbox" name="commitments" value="Save water" /> Save water every day</label>
+      <label><input type="checkbox" name="commitments" value="Plant trees" /> Plant more trees</label>
+      <label><input type="checkbox" name="commitments" value="Support renewables" /> Support renewable energy</label>
+      <label><input type="checkbox" name="commitments" value="Recycle more" /> Recycle more</label>
+      <label><input type="checkbox" name="commitments" value="Monitor energy use" /> Conserve electricity</label>
+      <label><input type="checkbox" name="commitments" value="Eco-friendly shopping" /> Prefer eco-friendly products</label>
+      <label><input type="checkbox" name="commitments" value="Educate others" /> Spread awareness about climate</label>
+    </div>
+
+    <div class="privacy">
+      Your personal info will never be shared. Used only for your certificate and pledge reminders.
+    </div>
+    <button type="submit">Submit My Pledge</button>
+  </form>
+
+  <!-- Certificate displayed after pledge submission -->
+  <div class="certificate" id="certificate">
+    <h2>🌱 Your Climate Action Certificate 🌱</h2>
+    <div id="certName" style="font-size: 1.5em; font-weight: bold;"></div>
+    <div>Thank you for your pledge. Together, we lead positive change!</div>
+    <div id="certHearts" style="font-size: 2em; margin-top: 6px;"></div>
+  </div>
+
+  <!-- Public pledge wall showing recent pledges -->
+  <section>
+    <h2>Pledge Wall: Our Climate Heroes ⭐</h2>
+    <table id="pledgeWall">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>State</th>
+          <th>Profile</th>
+          <th>Actions Taken</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Pledges will appear here -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
