@@ -1,5 +1,5 @@
 [View the Live Site on Netlify](rococo-seahorse-320a0c.netlify.app)
-![Climate Action Pledge Screenshot]("C:\Users\danis\OneDrive\Pictures\Screenshots\photo.png")
+![Climate Action Pledge Screenshot](photo.png)
 
 
 ## Project Overview
